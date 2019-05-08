@@ -1,0 +1,47 @@
+.staff-container {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.staff-sidebar {
+  position: sticky;
+  top: 25px;
+}
+
+.staff-sidebar-content {
+  margin: 25px;
+  width: 240px;
+  //max-height: 75vh;
+  overflow: auto;
+}
+
+.profile-picture {
+  height: 192px;
+  background-color: #ccc;
+}
+
+.full-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.edit-profile {
+  font-size: 12px;
+  margin:5px;
+}
+
+.personal-content,
+.daily-classes{
+    padding:20px;
+    margin-bottom:40px;
+    background: rgba(0, 0, 0, 0.03);
+    text-align: center;
+}
+
+.daily-classes-content{    
+  background-color: #ccc;
+  height:500px;
+  margin-top:20px;
+}

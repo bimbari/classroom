@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StylesModule } from './styles/styles.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { LayoutModule } from './layout/layout.module';
+import { FeaturesModule } from './features/features.module';
 
 @NgModule({
   declarations: [
@@ -12,10 +14,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     StylesModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    LayoutModule,
+    FeaturesModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

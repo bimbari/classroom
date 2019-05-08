@@ -8,7 +8,4 @@ import { FormControl } from '@angular/forms';
 })
 export class AppComponent {
   title = 'classroom';
-
-  myControl = new FormControl();
-  options: string[] = ['One', 'Two', 'Three'];
 }
