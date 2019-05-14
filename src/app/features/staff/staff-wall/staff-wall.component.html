@@ -1,8 +1,13 @@
 
-<h3>Select week</h3>
+<div [formGroup]="formGroup">
+  <h3>Select week</h3>
 
-<mat-form-field>
-  <input matInput [matDatepicker]="picker" placeholder="Choose a date">
-  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-  <mat-datepicker #picker></mat-datepicker>
-</mat-form-field>
+  <mat-form-field>
+    <input matInput
+        placeholder="Select Time Range"
+        [satDatepicker]="picker"
+        formControlName="date">
+    <sat-datepicker #picker [rangeMode]="true"></sat-datepicker>
+    <sat-datepicker-toggle matSuffix [for]="picker"></sat-datepicker-toggle>
+  </mat-form-field>
+</div>

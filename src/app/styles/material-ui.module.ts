@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   MatButtonModule, MatCheckboxModule, MatCardModule,
-  MatFormFieldModule, MatAutocompleteModule, MatOptionModule, MatInputModule, MatTabsModule, MatNativeDateModule, MatDatepickerModule
+  MatFormFieldModule, MatAutocompleteModule, MatOptionModule, MatInputModule,
+  MatTabsModule, MatNativeDateModule, MatDatepickerModule
 } from '@angular/material';
-
+import { SatDatepickerModule, SatNativeDateModule } from 'saturn-datepicker';
 
 @NgModule({
   declarations: [],
@@ -13,13 +14,15 @@ import {
     CommonModule, BrowserAnimationsModule, MatButtonModule,
     MatCheckboxModule, MatCardModule, MatFormFieldModule,
     MatAutocompleteModule, MatOptionModule, MatInputModule,
-    MatTabsModule, MatNativeDateModule, MatDatepickerModule
+    MatTabsModule, MatNativeDateModule, MatDatepickerModule,
+    SatDatepickerModule, SatNativeDateModule
   ],
   exports: [
     BrowserAnimationsModule, MatButtonModule,
     MatCheckboxModule, MatCardModule, MatFormFieldModule,
     MatAutocompleteModule, MatOptionModule, MatInputModule,
-    MatTabsModule, MatNativeDateModule, MatDatepickerModule
+    MatTabsModule, MatNativeDateModule, MatDatepickerModule,
+    SatDatepickerModule, SatNativeDateModule
   ]
 })
 export class MaterialUiModule { }

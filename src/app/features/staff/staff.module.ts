@@ -10,11 +10,12 @@ import { StaffAuditComponent } from './staff-audit/staff-audit.component';
 import { StaffAvailabilityComponent } from './staff-availability/staff-availability.component';
 import { StaffTimeoffCoverageComponent } from './staff-timeoff-coverage/staff-timeoff-coverage.component';
 import { StaffTimesheetComponent } from './staff-timesheet/staff-timesheet.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [StaffHomeComponent, StaffWallComponent, StaffConferenceComponent, StaffTrainingRecordComponent, StaffAuditComponent, StaffAvailabilityComponent, StaffTimeoffCoverageComponent, StaffTimesheetComponent],
   imports: [
-    CommonModule, RouterModule, StylesModule
+    CommonModule, RouterModule, FormsModule, ReactiveFormsModule, StylesModule
   ],
   exports: []
 })
