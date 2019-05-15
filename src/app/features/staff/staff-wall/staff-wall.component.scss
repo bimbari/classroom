@@ -1,0 +1,29 @@
+.staff-wall-container {
+  padding: 20px;
+}
+
+.time-range {
+  width: 300px;
+}
+
+.example-card {
+  max-width: 400px;
+}
+
+.class-header-image {
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.class-card{
+}
+
+.students-grid{
+    width:100%;
+}
+
+.students-grid mat-grid-tile{
+  border:solid 1px #ccc;
+}

@@ -18,10 +18,26 @@ export class StaffWallComponent implements OnInit {
   formGroup: FormGroup;
 
   initForm() {
-    let today = moment();
+
+    let beginDate = moment().add('weeks', -1).startOf('isoWeek').toDate(),
+      endDate = moment().add('weeks', -1).endOf('isoWeek').toDate();
+
     this.formGroup = this.fb.group({
-      date: [{ begin: today.startOf('week').add("days", 1).toDate(), end: today.endOf('week').add("days", -1).toDate() }]
+      date: [{ begin: beginDate, end: endDate }]
     });
+  }
+
+}
+
+
+import {NativeDateAdapter} from '@angular/material';
+import {Injectable} from '@angular/core';
+
+@Injectable()
+export class MyDateAdapter extends NativeDateAdapter {
+
+  getFirstDayOfWeek(): number {
+    return 1;
   }
 
 }
